@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nirvana — История</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body {
+      display:flex;flex-direction:column;min-height:100vh;
+      font-family:'Courier New',monospace;
+      background:#1a1a1a;
+      color:#fff;
+    }
+    header {
+      background:#1a1a1a;
+      border-bottom:2px solid #DDB63B;
+    }
+    nav {
+      display:flex;justify-content:center;gap:30px;
+      padding:20px 0;text-transform:uppercase;font-weight:bold;
+      flex-wrap:wrap;
+    }
+    nav a {
+      color:#fff;text-decoration:none;position:relative;padding:4px 0;
+      font-size:15px;letter-spacing:1px;
+    }
+    nav a:hover{
+      color:#DDB63B;
+    }
+    nav a.active {
+      color:#DDB63B;
+    }
+    nav a.active::after {
+      content:"";position:absolute;left:0;right:0;bottom:-2px;
+      height:2px;background:#DDB63B;
+    }
+    main {
+      flex:1 0 auto;padding:40px 20px;
+      max-width:800px;margin:0 auto;
+    }
+    h2 {
+      text-align:center;font-size:2.5rem;color:#DDB63B;
+      margin-bottom:40px;text-transform:uppercase;
+      font-family:'Arial Black',sans-serif;
+      border-bottom:2px solid #DDB63B;
+      padding-bottom:10px;
+    }
+    .entry {
+      background:#262626;
+      padding:20px;
+      margin-bottom:20px;
+      border:1px solid #DDB63B;
+      border-radius:5px;
+    }
+    .date {
+      display:inline-block;
+      padding:5px 15px;
+      background:#DDB63B;
+      color:#1a1a1a;
+      font-weight:bold;
+      border-radius:3px;
+      margin-bottom:15px;
+      font-family:'Arial Black',sans-serif;
+      font-size:14px;
+    }
+    .entry p {
+      line-height:1.6;
+      color:#fff;
+      font-size:15px;
+    }
+    footer {
+      background:#1a1a1a;
+      color:#fff;
+      text-align:center;
+      padding:15px 0;
+      font-size:14px;
+      border-top:2px solid #DDB63B;
+    }
+    @media (max-width: 768px) {
+      nav {gap:15px;padding:15px 10px}
+      h2 {font-size:2rem}
+      main {padding:20px}
+      .entry {margin-bottom:15px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html">Общая информация</a>
+      <a href="history.html" class="active">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Фильмография</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>История группы</h2>
+
+    <div class="entry">
+      <span class="date">1987</span>
+      <p>Курт Кобейн и Крист Новоселич основывают группу в Абердине, штат Вашингтон. После нескольких смен названия (включая Skid Row и Pen Cap Chew) останавливаются на Nirvana.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">Декабрь 1987</span>
+      <p>Первая демо-запись группы с барабанщиком Дэйлом Кровером. Запись включает ранние версии песен "Floyd the Barber" и "Paper Cuts", которые позже войдут в дебютный альбом.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">1988</span>
+      <p>Выход первого сингла "Love Buzz" на независимом лейбле Sub Pop. К группе присоединяется барабанщик Чэд Ченнинг. Начало активных выступлений в Сиэтле.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">Июнь 1989</span>
+      <p>Выход дебютного альбома "Bleach", записанного всего за 606 долларов. Альбом демонстрирует сырое, тяжелое звучание, характерное для сиэтлской сцены того времени.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">1990</span>
+      <p>Дэйв Грол заменяет Чэда Ченнинга на позиции барабанщика. Группа начинает работу над новым материалом и подписывает контракт с major-лейблом DGC Records.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">Сентябрь 1991</span>
+      <p>Выход альбома "Nevermind". Сингл "Smells Like Teen Spirit" становится гимном поколения. Альбом возглавляет чарт Billboard 200, сделав гранж мейнстримом.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">1992</span>
+      <p>Курт Кобейн женится на Кортни Лав. Группа выступает хедлайнером на фестивале Reading. Выходит сборник би-сайдов "Incesticide".</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">Сентябрь 1993</span>
+      <p>Выход альбома "In Utero", спродюсированного Стивом Альбини. Альбом демонстрирует более сырое и агрессивное звучание, чем "Nevermind".</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">Ноябрь 1993</span>
+      <p>Запись легендарного концерта MTV Unplugged в Нью-Йорке. Акустическое выступление показывает другую сторону группы и включает каверы песен Дэвида Боуи и Leadbelly.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">Март 1994</span>
+      <p>Последний концерт Nirvana в Мюнхене, Германия. Группа работает над новым материалом и планирует следующий альбом.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">5 апреля 1994</span>
+      <p>Курт Кобейн трагически уходит из жизни в своем доме в Сиэтле. Это событие становится концом эры Nirvana и одной из самых значимых потерь в истории рок-музыки.</p>
+    </div>
+
+    <div class="entry">
+      <span class="date">После 1994</span>
+      <p>Выходят посмертные релизы, включая "MTV Unplugged in New York" (1994) и "From the Muddy Banks of the Wishkah" (1996). Дэйв Грол основывает Foo Fighters, Крист Новоселич участвует в различных музыкальных и общественных проектах. Наследие Nirvana продолжает влиять на музыку и культуру.</p>
+    </div>
+  </main>
+
+  <footer>© 2024 Nirvana Fan Site. Учебный проект.</footer>
+</body>
+</html>

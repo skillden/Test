@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nirvana — Заказать альбом</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body {
+      display:flex;flex-direction:column;min-height:100vh;
+      font-family:'Courier New',monospace;
+      background:#1a1a1a;
+      color:#fff;
+    }
+    header {
+      background:#1a1a1a;
+      border-bottom:2px solid #DDB63B;
+    }
+    nav {
+      display:flex;justify-content:center;gap:30px;
+      padding:20px 0;text-transform:uppercase;font-weight:bold;
+      flex-wrap:wrap;
+    }
+    nav a {
+      color:#fff;text-decoration:none;position:relative;padding:4px 0;
+      font-size:15px;letter-spacing:1px;
+    }
+    nav a:hover{
+      color:#DDB63B;
+    }
+    nav a.active {
+      color:#DDB63B;
+    }
+    nav a.active::after {
+      content:"";position:absolute;left:0;right:0;bottom:-2px;
+      height:2px;background:#DDB63B;
+    }
+    main {
+      flex:1 0 auto;padding:40px 20px;
+      max-width:800px;margin:0 auto;
+    }
+    h2 {
+      text-align:center;font-size:2.5rem;color:#DDB63B;
+      margin-bottom:40px;text-transform:uppercase;
+      font-family:'Arial Black',sans-serif;
+      border-bottom:2px solid #DDB63B;
+      padding-bottom:10px;
+    }
+    .form {
+      background:#262626;
+      border:1px solid #DDB63B;
+      border-radius:5px;
+      padding:20px;
+    }
+    .form iframe {
+      width:100%;
+      height:700px;
+      border:none;
+    }
+    footer {
+      background:#1a1a1a;
+      color:#fff;
+      text-align:center;
+      padding:15px 0;
+      font-size:14px;
+      border-top:2px solid #DDB63B;
+    }
+    @media (max-width: 768px) {
+      nav {gap:15px;padding:15px 10px}
+      h2 {font-size:2rem}
+      main {padding:20px}
+      .form iframe {height:600px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html">Общая информация</a>
+      <a href="history.html">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Фильмография</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html" class="active">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Заказать альбом</h2>
+    
+    <div class="form">
+      <!-- Замените YOUR_FORM_ID на ID вашей Google-формы -->
+      <iframe 
+        src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" 
+        title="Форма заказа">
+        Загрузка...
+      </iframe>
+    </div>
+  </main>
+
+  <footer>© 2024 Nirvana Fan Site. Учебный проект.</footer>
+</body>
+</html>

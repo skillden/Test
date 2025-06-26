@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nirvana — Фильмография</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body {
+      display:flex;flex-direction:column;min-height:100vh;
+      font-family:'Courier New',monospace;
+      background:#1a1a1a;
+      color:#fff;
+    }
+    header {
+      background:#1a1a1a;
+      border-bottom:2px solid #DDB63B;
+    }
+    nav {
+      display:flex;justify-content:center;gap:30px;
+      padding:20px 0;text-transform:uppercase;font-weight:bold;
+      flex-wrap:wrap;
+    }
+    nav a {
+      color:#fff;text-decoration:none;position:relative;padding:4px 0;
+      font-size:15px;letter-spacing:1px;
+    }
+    nav a:hover{
+      color:#DDB63B;
+    }
+    nav a.active {
+      color:#DDB63B;
+    }
+    nav a.active::after {
+      content:"";position:absolute;left:0;right:0;bottom:-2px;
+      height:2px;background:#DDB63B;
+    }
+    main {
+      flex:1 0 auto;padding:40px 20px;
+      max-width:800px;margin:0 auto;
+    }
+    h2 {
+      text-align:center;font-size:2.5rem;color:#DDB63B;
+      margin-bottom:40px;text-transform:uppercase;
+      font-family:'Arial Black',sans-serif;
+      border-bottom:2px solid #DDB63B;
+      padding-bottom:10px;
+    }
+    .films {
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+      gap:20px;
+    }
+    .film {
+      background:#262626;
+      border:1px solid #DDB63B;
+      border-radius:5px;
+      overflow:hidden;
+    }
+    .film img {
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-bottom:1px solid #DDB63B;
+    }
+    .film-info {
+      padding:20px;
+    }
+    .film-title {
+      font-size:18px;
+      color:#DDB63B;
+      margin-bottom:10px;
+      font-family:'Arial Black',sans-serif;
+    }
+    .film-year {
+      font-size:14px;
+      color:#fff;
+      margin-bottom:15px;
+    }
+    .film-description {
+      font-size:14px;
+      line-height:1.6;
+      color:#fff;
+    }
+    footer {
+      background:#1a1a1a;
+      color:#fff;
+      text-align:center;
+      padding:15px 0;
+      font-size:14px;
+      border-top:2px solid #DDB63B;
+    }
+    @media (max-width: 768px) {
+      nav {gap:15px;padding:15px 10px}
+      h2 {font-size:2rem}
+      main {padding:20px}
+      .films {grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html">Общая информация</a>
+      <a href="history.html">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html" class="active">Фильмография</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Фильмография</h2>
+    
+    <div class="films">
+      <div class="film">
+        <img src="img/films/unplugged.jpg" alt="MTV Unplugged in New York">
+        <div class="film-info">
+          <div class="film-title">MTV Unplugged in New York</div>
+          <div class="film-year">1994</div>
+          <div class="film-description">
+            Легендарное акустическое выступление группы, записанное в ноябре 1993 года. Концерт включает уникальные акустические версии хитов и каверы любимых песен группы.
+          </div>
+        </div>
+      </div>
+
+      <div class="film">
+        <img src="img/films/live_tonight.jpg" alt="Live! Tonight! Sold Out!!">
+        <div class="film-info">
+          <div class="film-title">Live! Tonight! Sold Out!!</div>
+          <div class="film-year">1994</div>
+          <div class="film-description">
+            Документальный фильм, собранный из концертных выступлений, интервью и закулисных съемок. Проект был начат самим Куртом Кобейном.
+          </div>
+        </div>
+      </div>
+
+      <div class="film">
+        <img src="img/films/classic_albums.jpg" alt="Classic Albums: Nirvana – Nevermind">
+        <div class="film-info">
+          <div class="film-title">Classic Albums: Nirvana – Nevermind</div>
+          <div class="film-year">2005</div>
+          <div class="film-description">
+            Документальный фильм о создании культового альбома "Nevermind". Включает интервью с участниками группы и продюсером Бутчем Вигом.
+          </div>
+        </div>
+      </div>
+
+      <div class="film">
+        <img src="img/films/montage.jpg" alt="Montage of Heck">
+        <div class="film-info">
+          <div class="film-title">Kurt Cobain: Montage of Heck</div>
+          <div class="film-year">2015</div>
+          <div class="film-description">
+            Первый полностью авторизованный документальный фильм о жизни Курта Кобейна, включающий ранее неизвестные записи, рисунки и дневники.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2024 Nirvana Fan Site. Учебный проект.</footer>
+</body>
+</html>

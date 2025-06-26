@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Nirvana — Общая информация</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body {
+      display:flex;flex-direction:column;min-height:100vh;
+      font-family:'Courier New',monospace;
+      background:#1a1a1a;
+      color:#fff;
+    }
+    header {
+      background:#1a1a1a;
+      border-bottom:2px solid #DDB63B;
+    }
+    nav {
+      display:flex;justify-content:center;gap:30px;
+      padding:20px 0;text-transform:uppercase;font-weight:bold;
+      flex-wrap:wrap;
+    }
+    nav a {
+      color:#fff;text-decoration:none;position:relative;padding:4px 0;
+      font-size:15px;letter-spacing:1px;
+    }
+    nav a:hover{
+      color:#DDB63B;
+    }
+    nav a.active {
+      color:#DDB63B;
+    }
+    nav a.active::after {
+      content:"";position:absolute;left:0;right:0;bottom:-2px;
+      height:2px;background:#DDB63B;
+    }
+    main {
+      flex:1 0 auto;padding:40px 20px;
+      max-width:800px;margin:0 auto;
+    }
+    h2 {
+      text-align:center;font-size:2.5rem;color:#DDB63B;
+      margin-bottom:40px;text-transform:uppercase;
+      font-family:'Arial Black',sans-serif;
+      border-bottom:2px solid #DDB63B;
+      padding-bottom:10px;
+    }
+    .members {
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+      gap:20px;
+    }
+    .member {
+      background:#262626;
+      border:1px solid #DDB63B;
+      border-radius:5px;
+      overflow:hidden;
+    }
+    .member img {
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-bottom:1px solid #DDB63B;
+    }
+    .member-info {
+      padding:20px;
+    }
+    .member-name {
+      font-size:18px;
+      color:#DDB63B;
+      margin-bottom:10px;
+      font-family:'Arial Black',sans-serif;
+    }
+    .member-role {
+      font-size:14px;
+      color:#fff;
+      margin-bottom:15px;
+    }
+    .member-description {
+      font-size:14px;
+      line-height:1.6;
+      color:#fff;
+    }
+    footer {
+      background:#1a1a1a;
+      color:#fff;
+      text-align:center;
+      padding:15px 0;
+      font-size:14px;
+      border-top:2px solid #DDB63B;
+    }
+    @media (max-width: 768px) {
+      nav {gap:15px;padding:15px 10px}
+      h2 {font-size:2rem}
+      main {padding:20px}
+      .members {grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="info.html" class="active">Общая информация</a>
+      <a href="history.html">История</a>
+      <a href="discography.html">Дискография</a>
+      <a href="filmography.html">Фильмография</a>
+      <a href="contacts.html">Контакты</a>
+      <a href="shop.html">Заказать</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Участники группы</h2>
+    
+    <div class="members">
+      <div class="member">
+        <img src="img/members/kurt.jpg" alt="Курт Кобейн">
+        <div class="member-info">
+          <div class="member-name">Курт Кобейн</div>
+          <div class="member-role">Вокал, гитара (1987-1994)</div>
+          <div class="member-description">
+            Основатель, фронтмен и главный автор песен группы. Его уникальный голос и 
+            глубокие тексты стали определяющими для целого поколения.
+          </div>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="img/members/krist.jpg" alt="Крист Новоселич">
+        <div class="member-info">
+          <div class="member-name">Крист Новоселич</div>
+          <div class="member-role">Бас-гитара (1987-1994)</div>
+          <div class="member-description">
+            Один из основателей группы и близкий друг Курта Кобейна. Его басовые линии 
+            стали важной частью фирменного звучания Nirvana.
+          </div>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="img/members/dave.jpg" alt="Дэйв Грол">
+        <div class="member-info">
+          <div class="member-name">Дэйв Грол</div>
+          <div class="member-role">Ударные (1990-1994)</div>
+          <div class="member-description">
+            Присоединился к группе в 1990 году. Его мощная игра на ударных придала 
+            звучанию группы новую энергию. Позже основал Foo Fighters.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>© 2024 Nirvana Fan Site. Учебный проект.</footer>
+</body>
+</html>
